@@ -27,7 +27,9 @@ function Projects() {
                         <p> This is a simple subtractive synthesizer created for Bart Massey's CS-510 Music, Sound and Computers course at PSU in Spring 2022. It features  Midi controller support, Standalone and VST3 support, 1x Monophonic Selectable Oscillator (sine, saw, square), 1x VCA ADSR envelope controller, 1x Filter ADSR envelope controller, 1x Switchable Ladder filter with cutoff and resonance controls, (Filters include Lowpass, Highpass, and Bandpass each with 12 or 24db slopes), and 1x Gain control.</p>
                         <p>The technologies used were C++ and JUCE</p>
                     </div>
-                    <div className='project-img'></div>
+                    <div className='project-img'>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/mgoawzzeguM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>
