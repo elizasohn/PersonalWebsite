@@ -1,21 +1,27 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 function Nav() {
     return (
         <nav>
-            <ul class="nav-list">
-                <li class="list-item">
-                    <a class="nav-link" href="/hw1/01-hello.html" alt="link to first exercise, 01-hello.html">Exercise 01</a>
+            <ul className="nav-list">
+                <li className="list-item">
+                    <Link className="nav-link" alt="link to about" to='/'>About</Link> |{" "}
                 </li>
-                <li class="list-item">
-                    <a class="nav-link" href="/hw1/02-card.html" alt="link to second exercise, 02-card.html">Exercise 02</a>
+            </ul>
+            <ul className="nav-list">
+                <li className="list-item">
+                    <Link className="nav-link" alt="link to projects" to='/projects'>Projects</Link>|{" "}
                 </li>
-                <li class="list-item">
-                    <a class="nav-link" href="/hw1/03-navbar.html" alt="link to third exercise, 03-navbar.html">Exercise 03</a>
+            </ul>
+            <ul className="nav-list">
+                <li className="list-item">
+                    <Link className="nav-link" alt="link to resume" to='/resume'>Resume</Link>|{" "}
                 </li>
-                <li class="list-item">
-                    <a class="nav-link" href="/hw1/04-table.html" alt="link to fourth exercise, 04-table.html">Exercise 04</a>
-                </li>
-                <li class="list-item">
-                    <a class="nav-link" href="/hw1/05-form.html" alt="link to fifth exercise, 05-form.html">Exercise 05</a>
+            </ul>
+            <ul className="nav-list">
+                <li className="list-item">
+                    <Link className="nav-link" alt="link to about" to='/contact'>Contact</Link>
                 </li>
             </ul>
         </nav>
