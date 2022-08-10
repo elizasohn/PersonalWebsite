@@ -5,12 +5,11 @@ function Nav() {
     return (
         <nav className="nav-container">
             <ul className="nav-initials">
-                <li className="list-item nav-initials">
+                <li className="list-item">
                     <h1>ES</h1>
                 </li>
-                </ul>
+            </ul>
             <ul className="nav-list">
-                
                 <li className="list-item">
                     <Link className="nav-link" alt="link to about" to='/'>
                         <h1>About</h1>
