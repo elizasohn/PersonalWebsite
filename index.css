@@ -1,15 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 body {
-  background: palegreen;
-  color: black;
+  background: var(--white);
+  color: var(--black);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat',
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+.container {
+  /* width: 50vw; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10vh auto auto;
+}
+.about {
+  width: 50vw;
+}
+.about .img {
+  border-radius: 20px;
+  border: 12px solid var(--black);
+  object-fit: cover;
+  height: 40vw;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+}
+
+/* p::first-line {
+  font-size: 36px;
+  font-weight: bold;
+  font-style: sans-serif;
+} */
+:root {
+  --white: #ffffff;
+  --black: #080808;
+  --orange: #ffa500;
+  --green: #006400;
+  --salmon: #d88181;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+.nav-container {
+  display: flex;
+  background: var(--black);
+  color: var(--white);
+}
+  .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav-list .list-item {
+    /* background-color: var(--green); */
+    list-style-type: none;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* .nav-list .list-item:not(:first-child):hover {
+    background-color: var(--gray);
+  }
+
+ .nav-list .list-item:not(:first-child) {
+   transition: background-color 1s ease-out 150ms;
+ } */
+ .nav-container {
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+ }
+ .nav-list {
+  margin: 0 20px;
+ }
+ .nav-list .list-item:hover {
+    background-color: var(--salmon);
+  }
+
+ .nav-list .list-item {
+   transition: background-color 1s ease-out 150ms;
+ }
+
+  .list-item:hover>a {
+    color: var(--black);
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: var(--white);
+  }
+  .nav-container .nav-initials h1 {
+    font-size: 42px;
+  }
+
+  /* form */
+.form {
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  padding: 25px;
+  width: 300px;
+}
+
+.form>h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form-control {
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-control>label {
+  font-weight: bold;
+}
+
+.form-control>input {
+  width: 65%;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-weight: bold;
+}
+
+.form-element {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-element>div {
+  margin: 5px;
+}
+
+.btn {
+  width: 100%;
+}
+
+.btn>input {
+  width: 48%;
+  height: 36px;
+}
+
+.btn-primary {
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 5px;
+  border: 1px solid var(--black);
+}
+
+.btn-primary:hover {
+  background-color: var(--orange);
+  color: var(--black);
+  border-radius: 5px;
+  border: 1px solid var(--black);
+}
+
+.btn-secondary {
+  background-color: var(--white);
+  color: var(--green);
+  border-radius: 5px;
+  border: 1px solid var(--green);
+}
+
+.btn-secondary:hover {
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 5px;
+  border: 1px solid var(--black);
 }
