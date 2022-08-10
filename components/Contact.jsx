@@ -26,6 +26,12 @@ class Contact extends Component {
         this.setState({[name]: value},
             () => { this.validateField(name, value )});
     }
+    handleSubmit = (e) => {
+        e.preventDefault();
+        this.validateField('name', this.state.name);
+        this.validateField('email', this.state.email);
+        this.validateField('message', this.state.message);
+    }
 
     validateField(fieldName, value) {
         let fieldValidationErrors = this.state.formErrors;
@@ -35,15 +41,15 @@ class Contact extends Component {
 
         switch(fieldName) {
             case 'name':
-                nameValid = value.length >= 1;
+                nameValid = value.length >= 2;
                 fieldValidationErrors.name = nameValid ? '' : 'must enter a name'
                 break;
             case 'email':
-                emailValid = value.length >= 1;
+                emailValid = value.length >= 2;
                 fieldValidationErrors.email = emailValid ? '' : 'must enter a valid email';
                 break;
             case 'message':
-                messageValid = value.length >= 1;
+                messageValid = value.length >= 2;
                 fieldValidationErrors.message = messageValid ? '' : 'must enter a valid message';
                 break;
             default:
@@ -70,18 +76,18 @@ class Contact extends Component {
     render () {
         return (
             <div className="container">
-            <form className="form" action="">
+            <form className="form" action="" onSubmit={this.handleSubmit}>
                     <div className="form-control">
                         <label htmlFor='name'>Name:</label>
-                        <input id="name" type="name" name="name" value={this.state.name}></input>
+                        <input id="name" type="name" name="name" value={this.state.name} onChange={this.handleInput}></input>
                     </div>
                     <div className="form-control">
                         <label htmlFor='email'>Email:</label>
-                        <input id="email" type="email" name="email" value={this.state.email}></input>
+                        <input id="email" type="email" name="email" value={this.state.email} onChange={this.handleInput}></input>
                     </div>
                     <div className="form-control">
                         <label htmlFor="message">Message:</label>
-                        <textarea id="message" type="message" name="message"></textarea>
+                        <textarea id="message" type="message" name="message" value={this.state.message} onChange={this.handleInput}></textarea>
                     </div>
                     <div className="btn">
                         <input className="btn-primary" type="submit" name="submit" value="Submit"/>
