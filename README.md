@@ -15,7 +15,14 @@ Alternately:
 
 Visit the deployed website at https://elizasohn.github.io/PersonalWebsite/
 
+## Technologies Used
 
+* Javascript
+* JSX
+* CSS
+* HTML
+* React
+* Create React App
 
 ## Planned Features
 
