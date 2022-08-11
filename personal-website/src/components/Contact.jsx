@@ -33,6 +33,14 @@ class Contact extends Component {
         this.validateField('message', this.state.message);
     }
 
+    handleReset = (e) => {
+        this.setState({
+            name: '',
+            email: '',
+            message: '',
+        });
+    };
+
     validateField(fieldName, value) {
         let fieldValidationErrors = this.state.formErrors;
         let nameValid = this.state.nameValid;
@@ -76,7 +84,7 @@ class Contact extends Component {
     render () {
         return (
             <div className="container">
-            <form className="form" action="" onSubmit={this.handleSubmit}>
+            <form className="form" action="" onSubmit={this.handleSubmit} onReset={this.handleReset}>
                     <div className="form-control">
                         <label htmlFor='name'>Name:</label>
                         <input id="name" type="name" name="name" value={this.state.name} onChange={this.handleInput}></input>
