@@ -10,20 +10,26 @@ function Nav() {
                 </li>
             </ul>
             <ul className="nav-list">
-                <li className="list-item">
-                    <Link className="nav-link" alt="link to about" to='/'>
+                <Link className="nav-link" alt="link to about" to='/'>
+                    <li className="list-item">
                         <h1>About</h1>
-                    </Link>
-                </li>
-                <li className="list-item">
-                    <Link className="nav-link" alt="link to projects" to='/projects'><h1>Projects</h1></Link>
-                </li>
-                <li className="list-item">
-                    <Link className="nav-link" alt="link to resume" to='/resume'><h1>Resume</h1></Link>
-                </li>
-                <li className="list-item">
-                    <Link className="nav-link" alt="link to about" to='/contact'><h1>Contact</h1></Link>
-                </li>
+                    </li>
+                </Link>
+                <Link className="nav-link" alt="link to projects" to='/projects'>
+                    <li className="list-item">
+                        <h1>Projects</h1>
+                    </li>
+                </Link>
+                <Link className="nav-link" alt="link to resume" to='/resume'>
+                    <li className="list-item">
+                        <h1>Resume</h1>
+                    </li>
+                </Link>
+                <Link className="nav-link" alt="link to about" to='/contact'>
+                    <li className="list-item">
+                        <h1>Contact</h1>
+                    </li>
+                </Link>
             </ul>
         </nav>
     );
