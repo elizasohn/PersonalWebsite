@@ -381,8 +381,8 @@ legend {
  
   /* nav */
 
-  .nav-list .list-item a {
-    font-size: 12px;
+  .nav-list .list-item h1 {
+    font-size: 18px;
   }
 
   .nav-list .list-item {
@@ -398,6 +398,9 @@ legend {
     align-content: center;
   }
 
+  .nav-link {
+    height: max-content;
+  }
   /* about  */
 
   .about {
